@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .product-detail{
+            width: 360px;
+            position: absolute;
+            top: 0%;
+            right: 0%;
+        }
+
+        
+        .div-close{
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background-color: var(--white);
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-detail img:nth-child(2){
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 0 0 24px 24px;
+        }
+        
+        .product-detail div img{
+            width: 12px;
+        }
+
+        .product-info{
+            padding: 24px 24px ;
+        }
+
+        .product-info p:nth-child(1){
+            font-size: var(--md);
+            font-weight: bold;
+        }
+
+        .product-info p:nth-child(2){
+            font-size: var(--md);
+            color:var(--very-light-pink);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .product-info p:nth-child(3){
+            font-weight: bold;
+            font-size: var(--sm);
+            color:var(--very-light-pink);
+        }
+
+        .primary-button{
+            background-color: var(--hospital-green);
+            color: var(--white);
+            width: 100%;
+            height: 50px;
+            font-size: var(--sm);
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width: 640px) {
+            .product-detail{
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <aside class="product-detail">
+        <div class="div-close">
+            <img src="../multimedia/iconos/icon_close.png" alt="button_close">
+        </div>
+        <img src="https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="mouse"> 
+        <div class="product-info">
+            <p>$15,00</p>
+            <p>Mouse Gamer</p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas mollitia illo aspernatur eaque 
+                error repudiandae recusandae, dolores, est perferendis animi eos repellendus excepturi quae corrupti
+                veritatis fugiat. Dolore, fugit sed.</p>
+        </div>
+        <button class="primary-button detail-button">
+            <img src="../multimedia/iconos/bt_add_to_cart.svg" alt="cart">
+            <p>Add to cart</p>
+        </button>
+    </aside>
+</body>
+</html>
