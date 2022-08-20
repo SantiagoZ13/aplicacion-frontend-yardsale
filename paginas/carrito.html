@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
-        :root{
+        :root {
             --very-light-pink: #C7C7C7;
             --text-input-field: #F7F7F7;
             --hospital-green: #ACD9B2;
@@ -21,41 +22,43 @@
             --lg: 18px;
         }
 
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
 
-        body{
+        body {
             font-family: 'Quicksand', sans-serif;
         }
 
-        .product-detail{
+        .product-detail {
             width: 360px;
             position: absolute;
             top: 0%;
             right: 0%;
             padding: 24px;
-            box-sizing: border-box ;
+            box-sizing: border-box;
         }
 
-        .title-container{
+        .title-container {
             display: flex;
             margin: 16px 0;
         }
-        .title-container img{
+
+        .title-container img {
             cursor: pointer;
             width: 10px;
             transform: rotate(180deg);
             display: flex;
             margin-right: 14px;
         }
-        .title-container h1{
+
+        .title-container h1 {
             font-size: var(--lg);
             font-weight: bold;
         }
 
-        .shopping-cart{
+        .shopping-cart {
             display: grid;
             grid-template-columns: auto 1fr auto auto;
             gap: 14px;
@@ -63,34 +66,34 @@
             margin-bottom: 20px;
         }
 
-        .shopping-cart p:nth-child(2){
+        .shopping-cart p:nth-child(2) {
             font-size: var(--md);
             color: var(--very-light-pink);
         }
 
-        .shopping-cart p:nth-child(3){
+        .shopping-cart p:nth-child(3) {
             font-size: var(--md);
             font-weight: bold;
             color: var(--dark);
         }
 
 
-        .shopping-cart figure img{
+        .shopping-cart figure img {
             width: 80px;
             height: 80px;
             border-radius: 20px;
         }
 
-        .shopping-cart > img{
+        .shopping-cart>img {
             cursor: pointer;
         }
 
-        .orden-content{
+        .orden-content {
             display: flex;
             flex-direction: column;
         }
 
-        .order{
+        .order {
             display: grid;
             grid-template-columns: auto 1fr;
             gap: 16px;
@@ -101,28 +104,28 @@
             align-items: center;
         }
 
-        .order p{
+        .order p {
             display: flex;
             flex-direction: column;
         }
 
-        .order p:nth-child(2){
+        .order p:nth-child(2) {
             font-weight: bold;
             text-align: end;
         }
 
-        .order p span:nth-child(1){
+        .order p span:nth-child(1) {
             color: var(--black);
             font-size: var(--md);
             font-weight: bold;
         }
 
-        .order p span:nth-child(2){
+        .order p span:nth-child(2) {
             color: var(--very-light-pink);
             font-size: var(--sm);
         }
 
-        .primary-button{
+        .primary-button {
             background-color: var(--hospital-green);
             color: var(--white);
             width: 100%;
@@ -136,17 +139,15 @@
             justify-content: center;
             align-items: center;
         }
-        
+
         @media (max-width: 640px) {
-            .product-detail{
+            .product-detail {
                 width: 100%;
             }
         }
-
-        
-
     </style>
 </head>
+
 <body>
     <aside class="product-detail">
         <div class="orden-content">
@@ -154,13 +155,14 @@
                 <img src="../multimedia/iconos/flechita.svg" alt="arrow">
                 <h1>My order</h1>
             </div>
-        
+
             <div class="shopping-cart">
                 <figure>
-                    <img src="https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" href="product">
+                    <img src="https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        href="product">
                 </figure>
                 <p>
-                    Mouse Gamer 
+                    Mouse Gamer
                 </p>
                 <p>
                     $20,00
@@ -169,10 +171,11 @@
             </div>
             <div class="shopping-cart">
                 <figure>
-                    <img src="https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" href="product">
+                    <img src="https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        href="product">
                 </figure>
                 <p>
-                    Mouse Gamer 
+                    Mouse Gamer
                 </p>
                 <p>
                     $20,00
@@ -181,10 +184,11 @@
             </div>
             <div class="shopping-cart">
                 <figure>
-                    <img src="https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" href="product">
+                    <img src="https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        href="product">
                 </figure>
                 <p>
-                    Mouse Gamer 
+                    Mouse Gamer
                 </p>
                 <p>
                     $20,00
@@ -193,10 +197,11 @@
             </div>
             <div class="shopping-cart">
                 <figure>
-                    <img src="https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" href="product">
+                    <img src="https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        href="product">
                 </figure>
                 <p>
-                    Mouse Gamer 
+                    Mouse Gamer
                 </p>
                 <p>
                     $20,00
@@ -205,22 +210,16 @@
             </div>
             <div class="order">
                 <p>
-                    <span>
-                        04.25.2021
-                    </span>
-                    <span>
-                        6 articles
-                    </span>
+                    <span>Total</span>
                 </p>
-                <p>
-                    $560,00
-                </p>    
+                <p>$560.00</p>
             </div>
+
         </div>
-        <button class="primary-button detail-button">
-            <img src="../multimedia/iconos/bt_add_to_cart.svg" alt="cart">
-            <p>Add to cart</p>
+        <button class="primary-button">
+            Checkout
         </button>
     </aside>
 </body>
+
 </html>
